@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Stocks from './Stocks';
 import './App.scss';
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
         Live Stocks  -
         {(new Date()).toDateString()}
       </h2>
+      <Stocks />
     </div>
   );
 }
