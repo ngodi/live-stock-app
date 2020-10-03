@@ -10,7 +10,7 @@ const Stocks = () => {
   const [ticker, setTicker] = useState({});
   const [color, setColor] = useState({});
   useEffect(() => {
-    const ws = new WebSocket('ws://stocks.mnet.website');
+    const ws = new WebSocket('//ws.stocks.mnet.website');
     ws.onopen = () => {
       console.log('connected');
     };
@@ -20,7 +20,7 @@ const Stocks = () => {
       chartData = formatChartData(ticker, chartData);
     };
     ws.onclose = () => {
-      new WebSocket('ws://stocks.mnet.website');
+      new WebSocket('//ws.stocks.mnet.website');
     };
   
     return () => {
