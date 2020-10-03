@@ -20,3 +20,17 @@ export const updateData = (response, ticker, setTicker, setColor ) => {
         }))
       })
 }
+
+export const formatChartData = (ticker, chartData) => {
+  let chartItems = Object.entries(ticker);
+  // eslint-disable-next-line
+  chartItems.map(item => {
+       item.push("blue")
+  })
+chartData = [ ["Element", "Price", { role: "style" }] ,["", 0, ""] ];
+// eslint-disable-next-line
+  chartItems.map(item => {
+    chartData.push(item)
+})
+return chartData;
+}

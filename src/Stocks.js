@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
-import { updateData } from './utils/utils';
+import { updateData, formatChartData } from './utils/utils';
 import StockTable from './components/StockTable';
+import MyChart from './components/MyChart';
 
 import './Stocks.scss';
 
 let response = "";
+let chartData = [ ["Element", "Price", { role: "style" }] ,["", 0, ""] ] ;
 const Stocks = () => {
      const [ticker, setTicker] = useState({});
      const [color, setColor] = useState({});
@@ -18,6 +20,7 @@ const Stocks = () => {
       ws.onmessage = (event) => {
       response = JSON.parse(event.data);
         updateData(response, ticker, setTicker, setColor);
+        chartData = formatChartData(ticker, chartData);
        };
       ws.onclose = () => {
         new WebSocket('ws://stocks.mnet.website');
@@ -30,6 +33,7 @@ const Stocks = () => {
 
  return(
    <div className="stock">
+      <MyChart data={chartData}/>
      { (!response)? "....fetching data-" :  <StockTable ticker={ticker} color={color} />}
    </div>
  )
