@@ -23,7 +23,7 @@ Live Stock app is a react job assessment project. It is meant to pull subscribe 
 
 
 ### live Demo
-
+https://ngodi.github.io/live-stock-app/
 
  Getting Started
 ---------------
