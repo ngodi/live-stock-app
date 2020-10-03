@@ -1,1 +1,0 @@
-# live-stock-app
