@@ -5,7 +5,7 @@ import MyChart from './components/MyChart';
 import './Stocks.scss';
 
 let response = '';
-let chartData = [['Element', 'Price', { role: 'style' }] ,['', 0, '']] ;
+let chartData = [['Element', 'Price', { role: 'style' }], ['', 0, '']];
 const Stocks = () => {
   const [ticker, setTicker] = useState({});
   const [color, setColor] = useState({});
@@ -14,7 +14,7 @@ const Stocks = () => {
     ws.onopen = () => {
       console.log('connected');
     };
-    ws.onmessage = (event) => {
+    ws.onmessage = event => {
       response = JSON.parse(event.data);
       updateData(response, ticker, setTicker, setColor);
       chartData = formatChartData(ticker, chartData);
@@ -22,18 +22,18 @@ const Stocks = () => {
     ws.onclose = () => {
       new WebSocket('//ws.stocks.mnet.website');
     };
-  
+
     return () => {
       ws.close();
-    };
-  },[ticker]);
+    }; 
+  }, [ticker]);
 
-  return(
-   <div className="stock">
-      <MyChart data={chartData}/>
-     { (!response)? '....fetching data-' :  <StockTable ticker={ticker} color={color} />}
-   </div>
-  )
-}
-  
+  return (
+    <div className="stock">
+      <MyChart data={chartData} />
+      { (!response) ? '....fetching data-' : <StockTable ticker={ticker} color={color} />}
+    </div>
+  );
+};
+
 export default Stocks;
