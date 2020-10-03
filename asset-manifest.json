@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/live-stock-app/static/css/main.37747718.chunk.css",
-    "main.js": "/live-stock-app/static/js/main.d4e8465d.chunk.js",
-    "main.js.map": "/live-stock-app/static/js/main.d4e8465d.chunk.js.map",
+    "main.js": "/live-stock-app/static/js/main.5cdb69ec.chunk.js",
+    "main.js.map": "/live-stock-app/static/js/main.5cdb69ec.chunk.js.map",
     "runtime-main.js": "/live-stock-app/static/js/runtime-main.b96234b1.js",
     "runtime-main.js.map": "/live-stock-app/static/js/runtime-main.b96234b1.js.map",
     "static/js/2.0b5c11b7.chunk.js": "/live-stock-app/static/js/2.0b5c11b7.chunk.js",
     "static/js/2.0b5c11b7.chunk.js.map": "/live-stock-app/static/js/2.0b5c11b7.chunk.js.map",
     "index.html": "/live-stock-app/index.html",
-    "precache-manifest.96646783aee17ae6b56cf8c873f86e59.js": "/live-stock-app/precache-manifest.96646783aee17ae6b56cf8c873f86e59.js",
+    "precache-manifest.e3f895bba7d6b2d85efe792be6a7aead.js": "/live-stock-app/precache-manifest.e3f895bba7d6b2d85efe792be6a7aead.js",
     "service-worker.js": "/live-stock-app/service-worker.js",
     "static/css/main.37747718.chunk.css.map": "/live-stock-app/static/css/main.37747718.chunk.css.map",
     "static/js/2.0b5c11b7.chunk.js.LICENSE.txt": "/live-stock-app/static/js/2.0b5c11b7.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.b96234b1.js",
     "static/js/2.0b5c11b7.chunk.js",
     "static/css/main.37747718.chunk.css",
-    "static/js/main.d4e8465d.chunk.js"
+    "static/js/main.5cdb69ec.chunk.js"
   ]
 }
