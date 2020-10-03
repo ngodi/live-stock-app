@@ -2,7 +2,7 @@
   "name": "live-stock-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ngodi.github.io/live-stock-app/",
+  "homepage": "http://ngodi.github.io/live-stock-app/",
   "dependencies": {
     "@rooks/use-time-ago": "^3.6.0",
     "@testing-library/jest-dom": "^4.2.4",
